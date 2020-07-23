@@ -1,0 +1,25 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 1,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.newWindowDimensions": "fullscreen",
+    "breadcrumbs.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "sync.gist": "9d9557f6c6c74d57f54853079c5a2224",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.largeFileOptimizations": false,
+    "workbench.colorTheme": "Dracula"
+}
