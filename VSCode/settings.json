@@ -1,25 +1,94 @@
 {
-    "editor.tabSize": 2,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "window.zoomLevel": 1,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "window.newWindowDimensions": "fullscreen",
-    "breadcrumbs.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "sync.gist": "9d9557f6c6c74d57f54853079c5a2224",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.largeFileOptimizations": false,
-    "workbench.colorTheme": "Dracula"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[yaml]": {
+
+    "editor.formatOnSave": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Monokai",
+  "prettier.withNodeModules": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "bracketPairColorizer.depreciation-notice": false,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": true,
+  "ruby.rubocop.configFilePath": ".rubocop.yml",
+  "ruby.rubocop.executePath": "~/DS/movableink/",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "git.ignoreRebaseWarning": true,
+  "git.confirmSync": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path.mac": "/Users/jsigmon/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.mac": "/Users/jsigmon/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.helm-path.mac": "/Users/jsigmon/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+  },
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "github.copilot.enable": {
+    "enableAutoCompletions": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.enable": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

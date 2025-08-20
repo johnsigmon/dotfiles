@@ -1,16 +1,24 @@
+[user]
+	name = John Sigmon
+	email = johnasigmon@gmail.com
+
 [color]
 	branch = auto
 	diff = auto
 	status = auto
+	ui = true
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
+
 [color "status"]
 	added = yellow
 	changed = green
@@ -18,14 +26,45 @@
 
 [push]
 	default = current
-[url "git@git.movableink.com"]
-	insteadOf = MI
-[user]
-	name = John Sigmon
-	email = johnasigmon@gmail.com
+
+[pull]
+	rebase = false
+
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitexcludes
+
+[diff]
+	tool = vscode
+
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# Movable Ink specific URL rewrites
+[url "git@github.com:movableink/"]
+	insteadOf = https://github.com/movableink/
+[url "git@github.com:movableink-preview/"]
+	insteadOf = https://github.com/movableink-preview/
+[url "git@git.movableink.com"]
+	insteadOf = MI
